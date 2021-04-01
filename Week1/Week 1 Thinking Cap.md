@@ -1,7 +1,7 @@
 # Week 1 Thinking Cap
 
 ## Screenshot of the Site
-![images/example.png]()
+<img src="images/example.png">
 
 ## Link to the Site
 https://publicdomain.nypl.org/greenbook-map/
