@@ -5,6 +5,9 @@
 
   #profile {
       border: 10px solid #555;
-      float: left;
       vertical-align: top
+  }
+
+  p {
+      display: inline-block
   }
