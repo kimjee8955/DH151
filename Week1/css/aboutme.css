@@ -5,7 +5,11 @@
 
   #profile {
       float:left;
-      padding: 0 20px 70px 0
+      padding: 0 20px 0 0
+  }
+
+  h3 {
+      padding: 70px
   }
 
 
