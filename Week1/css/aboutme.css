@@ -1,0 +1,13 @@
+  body {
+      background-image: url('images/background.jpg');
+      font-family: 'Abel';font-size: 22px
+  }
+
+  #profile {
+      border: 10px solid #555;
+      float: left
+  }
+
+  #intro {
+    float: right
+  }
