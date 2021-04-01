@@ -1,11 +1,11 @@
   body {
-      background-image: url('images/background.jpg');
+      background-image: url('../images/background.jpg');
       font-family: 'Abel';font-size: 22px
   }
 
   #profile {
       border: 10px solid #555;
-      vertical-align: top
+      vertical-align: middle
   }
 
   p {
