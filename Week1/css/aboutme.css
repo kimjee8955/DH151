@@ -1,13 +1,12 @@
   body {
       background-image: url('../../Week1/images/background.jpg');
-      font-family: 'Didact Gothic';font-size: 22px
+      font-family: 'Verdana';font-size: 22px
   }
 
   #profile {
       border: 10px solid #555;
-      vertical-align: middle
+      float:left;
+      padding: 0 10px 0 0
   }
 
-  p {
-      display: inline-block
-  }
+
