@@ -3,5 +3,5 @@
 
 Taken Spring quarter 2021. 
 
-[Week 1: About Me](Week1/aboutme.html)\n
+[Week 1: About Me](Week1/aboutme.html)<\br>
 [Week 2: Maproom](Week1/index.html)
