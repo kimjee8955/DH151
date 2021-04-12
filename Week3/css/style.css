@@ -26,7 +26,16 @@ body {
 	grid-area: sidebar;
 	padding:10px;
     background-color: #b98fca;
+	overflow: auto; /* allows the sidebar to overflow with a scrollbar */
 }
 .content {
 	grid-area: content;
+}
+
+.sidebar-item {
+	padding: 10px;
+	background: gainsboro;
+	border: 1px solid gray;
+	margin: 5px;
+	cursor: pointer; /* change cursor to hand on hover */
 }
