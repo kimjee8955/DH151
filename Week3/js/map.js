@@ -18,7 +18,7 @@ let locations = [
 		'lat': 34.6937,
 		'lon': 135.5023,
 		'desc': 'My family lived here for 7 years',
-		'paragraph': 'I spent my childhood years here (around 7 years). The rest of my family still remmebers how to speak in Japanese but unfortunately, I forgot all of it.'
+		'paragraph': 'I spent my childhood years here (around 7 years). The rest of my family still remmebers how to speak in Japanese but unfortunately, I forgot all of it. I have a lot of happy memories associated with this place and would love to go back one day!'
 	},
 	{
 		'title':'Yongin, Korea',
@@ -53,7 +53,7 @@ let locations = [
 		'lat': 30.005493,
 		'lon': 31.477898,
 		'desc': 'My dad worked here',
-		'paragraph': 'My dad had to move here when I was in high school due to his job. I have never visited.'
+		'paragraph': 'My dad had to live here for a while when I was in high school due to his job. I have never visited this city but my dad has told me many interesting stories about this place.'
 	}
 ];
 /*change icon color to violet*/
