@@ -34,8 +34,14 @@ body {
 
 .sidebar-item {
 	padding: 10px;
+	background: white;
+	border: 1px solid white;
+	margin: 20px;
+	cursor: pointer; /* change cursor to hand on hover */
+	border-radius: 13px;
+}
+
+.sidebar-item:hover {
 	background: gainsboro;
 	border: 1px solid gray;
-	margin: 5px;
-	cursor: pointer; /* change cursor to hand on hover */
 }
