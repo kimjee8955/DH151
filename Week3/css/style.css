@@ -19,13 +19,16 @@ body {
 
 .header {
 	grid-area: header;
-	padding:10px;
-    background-color: #D7BDE2;
+	padding:25px;
+    background-color: #c38adb;
+	text-align: center;
+	font-family: 'Verdana';
+	font-size: 20px;
 }
 .sidebar {
 	grid-area: sidebar;
 	padding:10px;
-    background-color: #b98fca;
+    background-color: #d4b2e2;
 	overflow: auto; /* allows the sidebar to overflow with a scrollbar */
 }
 .content {
@@ -39,9 +42,15 @@ body {
 	margin: 20px;
 	cursor: pointer; /* change cursor to hand on hover */
 	border-radius: 13px;
+	text-align: center;
 }
-
+/* change button color when hovering*/
 .sidebar-item:hover {
 	background: gainsboro;
 	border: 1px solid gray;
 }
+/* make button click*/
+.sidebar-item:active {
+	background: gainsboro;
+	transform: translateY(4px);
+  }
