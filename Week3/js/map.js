@@ -72,11 +72,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-//add button for default view
-L.easyButton('fa-globe', function(btn,map){
-	map.fitBounds(myMarkers.getBounds());
-}, 'default view').addTo(map);
-
 //create feature group
 let myMarkers = L.featureGroup();
 
@@ -103,6 +98,11 @@ let layers = {
 L.control.layers(null,layers).addTo(map)
 
 map.fitBounds(myMarkers.getBounds())
+
+//add button on map for default view
+L.easyButton('fa-globe', function(btn,map){
+	map.fitBounds(myMarkers.getBounds());
+}, 'default view').addTo(map);
 
 //only fly to each location when the paragraphs aren't there
 function flyToIndex(index){
