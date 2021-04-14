@@ -56,7 +56,7 @@ let locations = [
 		'paragraph': 'My dad had to live here for a while when I was in high school due to his job. I have never visited this city but my dad has told me many interesting stories about this place.'
 	}
 ];
-/*change icon color to violet*/
+//change icon color to violet
 var violetIcon = new L.Icon({
 	  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
 	  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -65,7 +65,8 @@ var violetIcon = new L.Icon({
 	  popupAnchor: [1, -34],
 	  shadowSize: [41, 41]
 });
-	var map = L.map('map').setView([0,0],2);
+
+var map = L.map('map').setView([0,0],2);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -85,7 +86,9 @@ locations.forEach(function(item,index){
 
 		myMarkers.addLayer(marker)
 		
+		//fly to location and show/hide paragraph when clicked
 		$('.sidebar').append(`<div class="sidebar-item" onclick="flyToIndex(${index});ShowAndHide(${index})">${item.title}</div>`)
+		//add paragraph div in side-bar
 		$('.sidebar').append(`<div id = "${index}" style="display: none">${item.paragraph}<\div>`)
 });
 
@@ -101,6 +104,7 @@ L.control.layers(null,layers).addTo(map)
 
 map.fitBounds(myMarkers.getBounds())
 
+//only fly to each location when the paragraphs aren't there
 function flyToIndex(index){
 	var x = document.getElementById(index);
 	if (x.style.display == 'none'){
@@ -110,6 +114,7 @@ function flyToIndex(index){
 	}
 }
 
+//show and hide paragraph 
 function ShowAndHide(index) {
     var x = document.getElementById(index);
     if (x.style.display == 'none') {
