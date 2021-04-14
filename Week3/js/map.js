@@ -96,7 +96,6 @@ let layers = {
 
 //add layer control box
 L.control.layers(null,layers).addTo(map)
-
 map.fitBounds(myMarkers.getBounds())
 
 //add button on map for default view
