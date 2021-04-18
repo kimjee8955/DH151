@@ -20,15 +20,18 @@ body {
 .header {
 	grid-area: header;
 	padding:25px;
-    background-color: #c38adb;
+    background-color: #eed6f8;
 	text-align: center;
-	font-family: 'Verdana';
-	font-size: 20px;
+	font-family: 'Abril Display';
+	font-weight: bolder;
+	font-size: 30px;
 }
 .sidebar {
 	grid-area: sidebar;
 	padding:10px;
     background-color: #d4b2e2;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 1.5;
 	overflow: auto; /* allows the sidebar to overflow with a scrollbar */
 }
 .content {
@@ -37,7 +40,7 @@ body {
 
 .sidebar-item {
 	padding: 10px;
-	background: white;
+	background: rgb(252, 212, 248);
 	border: 1px solid white;
 	margin: 20px;
 	cursor: pointer; /* change cursor to hand on hover */
