@@ -46,7 +46,7 @@ let locations = [
 		'lat': 33.748783,
 		'lon': -84.388168,
 		'desc': 'My mom works here',
-		'paragraph': 'My mom currently works here! Don\'nt know much about this city but it\'s definitely a lot quieter than LA.'
+		'paragraph': 'My mom currently works here! Don\'t know much about this city but it\'s definitely a lot quieter than LA.'
 	},
 	{
 		'title':'Cairo, Egypt',
