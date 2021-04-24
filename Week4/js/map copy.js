@@ -3,13 +3,16 @@ let map;
 let lat = 0;
 let lon = 0;
 let zl = 3;
-let path = "data/Tovar.csv";
+let path = ["data/clean_closed2020.csv","data/clean_open2020.csv"];
 let markers = L.featureGroup();
 
 // initialize
 $( document ).ready(function() {
     createMap(lat,lon,zl);
-    readCSV(path);
+    
+	path.forEach(function(i) {
+		readCSV(path);
+	})
 });
 
 // create the map
@@ -50,16 +53,10 @@ function mapCSV(data){
 	// loop through each entry
 	data.data.forEach(function(item,index){
 		// create marker
-		let marker = L.circleMarker([item.latitude,item.longitude],circleOptions)
-        .on('mouseover',function(){
-			this.bindPopup(`${item.title}<br><img src="${item.image_url}">`).openPopup()
-		})
+		let marker = L.circleMarker([item.lat,item.long],circleOptions)
 
 		// add marker to featuregroup
 		markers.addLayer(marker)
-
-        // add entry to sidebar
-		$('.sidebar').append(`<img src="${item.image_url}" onmouseover="panToImage(${index})">`)
 	})
 
 	// add featuregroup to map
@@ -67,11 +64,4 @@ function mapCSV(data){
 
 	// fit markers to map
 	map.fitBounds(markers.getBounds())
-}
-
-function panToImage(index){
-	// zoom to level 17 first
-	map.setZoom(17);
-	// pan to the marker
-	map.panTo(markers.getLayers()[index]._latlng);
 }
