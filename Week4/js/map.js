@@ -59,7 +59,7 @@ function mapCSV(data){
 		markers.addLayer(marker)
 
         // add entry to sidebar
-		$('.sidebar').append(`<img src="${item.image_url}" onmouseover="panToImage(${index})">`)
+		$('.sidebar').append(`${item.title}<br><img src="${item.image_url}" onmouseover="panToImage(${index})"><br><br>`)
 	})
 
 	// add featuregroup to map
@@ -67,6 +67,11 @@ function mapCSV(data){
 
 	// fit markers to map
 	map.fitBounds(markers.getBounds())
+
+	//add button on map for default view
+	L.easyButton('fa-globe', function(btn,map){
+		map.fitBounds(markers.getBounds());
+}, 		'default view').addTo(map);
 }
 
 function panToImage(index){
