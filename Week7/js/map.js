@@ -101,7 +101,7 @@ function createLegend(){
 			if(to) {
 				labels.push(
 					'<i style="background:' + brew.getColorInRange(to) + '"></i> ' +
-					to.toFixed(2) + ' &ndash; ' + to.toFixed(2));
+					from.toFixed(2) + ' &ndash; ' + to.toFixed(2));
 				}
 			}
 			
